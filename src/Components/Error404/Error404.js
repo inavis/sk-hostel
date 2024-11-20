@@ -1,5 +1,10 @@
 import "./Error404.css";
+import { ErrorBoundary } from "../ErrorBoundary/ErrorBoundary";
 
 function Error404() {
-   return(<h1>Register Hosteller Form</h1>) 
+  return (
+    <ErrorBoundary>
+      <h1>Register Hosteller Form</h1>
+    </ErrorBoundary>
+  );
 }

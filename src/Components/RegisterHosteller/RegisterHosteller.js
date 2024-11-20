@@ -1,5 +1,10 @@
 import "./RegisterHosteller.css";
+import { ErrorBoundary } from "../ErrorBoundary/ErrorBoundary";
 
 function RegisterHosteller() {
-   return(<h1>Register Hosteller Form</h1>) 
+  return (
+    <ErrorBoundary>
+      <h1>Register Hosteller Form</h1>
+    </ErrorBoundary>
+  );
 }

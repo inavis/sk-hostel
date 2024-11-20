@@ -1,5 +1,10 @@
 import "./Header.css";
+import { ErrorBoundary } from "../ErrorBoundary/ErrorBoundary";
 
 export function Header() {
-    return (<h1>Header</h1>)
+  return (
+    <ErrorBoundary>
+      <h1>Header</h1>
+    </ErrorBoundary>
+  );
 }
