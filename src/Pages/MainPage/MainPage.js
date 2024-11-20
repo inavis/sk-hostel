@@ -1,13 +1,13 @@
 import "./MainPage.css";
-import {Header} from "../../Components/Header/Header";
-import {Footer} from  "../../Components/Footer/Footer";
+import { Header } from "../../Components/Header/Header";
+import { Footer } from "../../Components/Footer/Footer";
 
 export function MainPage() {
-   return(
+  return (
     <>
-        <Header/>
-        MainPage
-        <Footer/>
+      <Header />
+      MainPage
+      <Footer />
     </>
-   ) 
+  );
 }
