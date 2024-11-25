@@ -1,0 +1,66 @@
+header .logo {
+    max-width: 150px;
+}
+
+header .logo-container {
+    width: 100%;
+    position: absolute;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    top: 20px;
+    z-index: 1;
+}
+
+header button {
+    border: none;
+    outline: none;
+    background: none;
+    position: relative;
+    z-index: 2;
+}
+
+header button:hover {
+    cursor: pointer;
+}
+
+header .sub-nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+header .sub-nav .sub-nav-item {
+    background-color: var(--tealLight);
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .sub-nav .sub-nav-item i {
+    color: var(--teal);
+}
+
+header .main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+header .main-nav .main-nav-col {
+    display: flex;
+}
+
+header .main-nav .main-nav-col .main-nav-item:not(:last-child) {
+    padding-right: 40px;
+}
+
+
+header .main-nav .main-nav-col .main-nav-item {
+    color: var(--teal);
+    font-size: 20px;
+}
