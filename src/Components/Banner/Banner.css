@@ -1,6 +1,8 @@
 .banner{
-    background-image: linear-gradient(rgba(0, 0, 0, .83), rgba(255, 255, 255, 0) 17%), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .5)), url("../../Image/banner-terrace.jpeg");
-    background-position: 0 0, 0 0, 50%;
+    /* background-image: linear-gradient(rgba(0, 0, 0, .83), rgba(255, 255, 255, 0) 17%), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .5)), url("../../Image/banner-terrace.jpeg"); */
+    background-position-x: 50%;
+    background-position-y:0%;
+    background-image:  url("../../Image/banner-terrace.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
