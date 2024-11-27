@@ -1,0 +1,31 @@
+.banner{
+    background-image: linear-gradient(rgba(0, 0, 0, .83), rgba(255, 255, 255, 0) 17%), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .5)), url("../../Image/banner-terrace.jpeg");
+    background-position: 0 0, 0 0, 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    bottom: auto;
+    left: 0%;
+    right: 0%;
+    will-change: background-positionY;
+}
+
+.cloud {
+    width:200px;
+    height:150px;
+    border-radius: 0 0 50px 50px;
+    background:
+    /*                radius                            position  / 2xradius*/
+    radial-gradient(35px 30px,var(--white) 98%,transparent 100%) 20% 30%  /70px    60px,
+    radial-gradient(50px 45px,var(--white) 98%,transparent 100%) 50% 50%  /100px   90px,
+    radial-gradient(50px     ,var(--white) 98%,transparent 100%) 100% 100%/100px   100px,
+    radial-gradient(40px     ,var(--white) 98%,transparent 100%) 0 100%   /80px    80px,
+    /* base of the cloud */
+    linear-gradient(var(--white),var(--white)) bottom/100% 40px;;
+    background-repeat:no-repeat;
+
+    position: relative;
+    top: 90%;
+  }
