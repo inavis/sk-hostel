@@ -4,7 +4,7 @@ header {
 }
 
 header .logo {
-    max-width: 200px;
+    max-width: 180px;
     padding-top: 15px;
 }
 
@@ -41,8 +41,8 @@ header .sub-nav {
 
 header .sub-nav .sub-nav-item {
     background-color: var(--whiteLight);
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     border-radius: 100%;
     display: flex;
     align-items: center;
@@ -52,7 +52,7 @@ header .sub-nav .sub-nav-item {
 
 header .sub-nav .sub-nav-item i {
     color: var(--white);
-    font-size: 20px;
+    font-size: 15px;
 }
 
 header .main-nav {
@@ -72,7 +72,7 @@ header .main-nav .main-nav-col .main-nav-item:not(:last-child) {
 
 header .main-nav .main-nav-col .main-nav-item {
     color: var(--white);
-    font-size: 27px;
+    font-size: 25px;
     font-family: "Trochut", sans-serif;
     font-weight: 900;
 }
