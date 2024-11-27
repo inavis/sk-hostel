@@ -1,5 +1,11 @@
+header {
+    color: var(--white);
+    border-bottom: 1px solid white;
+}
+
 header .logo {
-    max-width: 150px;
+    max-width: 200px;
+    padding-top: 15px;
 }
 
 header .logo-container {
@@ -10,6 +16,7 @@ header .logo-container {
     bottom: auto;
     top: 20px;
     z-index: 1;
+    border-bottom: 1px solid hsla(0, 0%, 100%, .21);
 }
 
 header button {
@@ -22,33 +29,36 @@ header button {
 
 header button:hover {
     cursor: pointer;
+    color: var(--whiteLight);
 }
 
 header .sub-nav {
     display: flex;
     justify-content: flex-end;
     gap: 20px;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 header .sub-nav .sub-nav-item {
-    background-color: var(--tealLight);
-    width: 30px;
-    height: 30px;
+    background-color: var(--whiteLight);
+    width: 35px;
+    height: 35px;
     border-radius: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    /* border: 0.1px solid rgba(255,255,255,0.5); */
 }
 
 header .sub-nav .sub-nav-item i {
-    color: var(--teal);
+    color: var(--white);
+    font-size: 20px;
 }
 
 header .main-nav {
     display: flex;
     justify-content: space-between;
-    padding-top: 15px;
+    padding-top: 25px;
 }
 
 header .main-nav .main-nav-col {
@@ -61,6 +71,8 @@ header .main-nav .main-nav-col .main-nav-item:not(:last-child) {
 
 
 header .main-nav .main-nav-col .main-nav-item {
-    color: var(--teal);
-    font-size: 20px;
+    color: var(--white);
+    font-size: 27px;
+    font-family: "Trochut", sans-serif;
+    font-weight: 900;
 }

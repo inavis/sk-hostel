@@ -2,12 +2,13 @@ import React from "react";
 import "./Header.css";
 import { ErrorBoundary } from "../ErrorBoundary/ErrorBoundary";
 import logoImg from "../../Image/sk-hostel-logo.png";
+import logo6 from "../../Image/logo-6.png";
 import { StateContext } from "../../Context";
 
 export function Header() {
   const { routeChange } = React.useContext(StateContext);
   const headerData = {
-    logo: { logoSrc: logoImg, logoAlt: "SK Hostel" },
+    logo: { logoSrc: logo6, logoAlt: "SK Hostel" },
     subNavigation: [
       { icon: "mobile", text: "", link: "tel:919884411137", target: "_self" },
       {
@@ -33,12 +34,14 @@ export function Header() {
         <header>
           <div className="logo-container">
             {logo && logo !== undefined && (
-              <img
-                className="logo"
-                id="top"
-                src={logo.logoSrc}
-                alt={logo.logoAlt}
-              />
+              <div>
+                <img
+                  className="logo"
+                  id="top"
+                  src={logo.logoSrc}
+                  alt={logo.logoAlt}
+                />
+              </div>
             )}
           </div>
           <nav className="custom-container">
@@ -69,7 +72,7 @@ export function Header() {
                       if (index < navigation.length / 2) {
                         return (
                           <button
-                            className="main-nav-item redirect trochut-bold"
+                            className="main-nav-item redirect"
                             onClick={() => routeChange(link, target)}
                             key={link + index}
                           >
@@ -86,7 +89,7 @@ export function Header() {
                       if (index >= navigation.length / 2) {
                         return (
                           <button
-                            className="main-nav-item redirect trochut-bold"
+                            className="main-nav-item redirect"
                             onClick={() => routeChange(link, target)}
                             key={link + index}
                           >
